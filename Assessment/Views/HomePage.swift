@@ -8,26 +8,20 @@
 import SwiftUI
 
 struct HomePage: View {
+    var apiService : BaseAPIService
+    
     init(){
-        configureNavBar()
+        apiService = ProductsApiService()
     }
     var body: some View {
         TabView{
-            ListingPage().tabItem {
+            ListingPage(apiService: apiService).tabItem {
                 Label("Products",systemImage: "calendar")
             }
             FavouritePage().tabItem {
                 Label("Favourites",systemImage: "star")
             }
         }
-    }
-    
-    func configureNavBar(){
-            let navBarAppearance = UINavigationBarAppearance()
-            UINavigationBar.appearance().standardAppearance = navBarAppearance
-            UINavigationBar.appearance().compactAppearance = navBarAppearance
-            UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
-    
     }
 }
 

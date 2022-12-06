@@ -35,5 +35,6 @@ struct FavouritePage: View {
 struct FavouritePage_Previews: PreviewProvider {
     static var previews: some View {
         FavouritePage()
+            .environmentObject(FavouriteProducts())
     }
 }

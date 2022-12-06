@@ -3,4 +3,118 @@
    uuid = "AD2AF3B0-EB28-4ED3-89B0-085901E3C82A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85A79A2D-8E2C-4488-A2A3-9CAF1914CAEB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assessment/Services/MockDataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42094DC0-2A13-4FBE-93E2-2DD41EBA4675"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssessmentTests/ListingTestCases.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "testSuccessfulApiResponse()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "42094DC0-2A13-4FBE-93E2-2DD41EBA4675 - 2ddac17819a227c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for AssessmentTests.ListingTestCases.testSuccessfulApiResponse() async -&gt; ()"
+                  moduleName = "AssessmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suyog/Documents/Portfolio%20Apps/Assessment/AssessmentTests/ListingTestCases.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "42094DC0-2A13-4FBE-93E2-2DD41EBA4675 - 2ddac17819a227e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for AssessmentTests.ListingTestCases.testSuccessfulApiResponse() async -&gt; ()"
+                  moduleName = "AssessmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suyog/Documents/Portfolio%20Apps/Assessment/AssessmentTests/ListingTestCases.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2351E19D-9043-4662-96E7-BA5048DA4009"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Assessment/ViewModels/FavouritePageVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "checkIfFavourite(item:storedFavList:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2351E19D-9043-4662-96E7-BA5048DA4009 - 7b0336a83cdca69a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Assessment.FavouritePageVM.checkIfFavourite(item: Assessment.Product, storedFavList: Assessment.FavouriteProducts) -&gt; Swift.String"
+                  moduleName = "Assessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suyog/Documents/Portfolio%20Apps/Assessment/Assessment/ViewModels/FavouritePageVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "2351E19D-9043-4662-96E7-BA5048DA4009 - f9ef53999ac6161e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Assessment.Product) -&gt; Swift.Bool in Assessment.FavouritePageVM.checkIfFavourite(item: Assessment.Product, storedFavList: Assessment.FavouriteProducts) -&gt; Swift.String"
+                  moduleName = "Assessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suyog/Documents/Portfolio%20Apps/Assessment/Assessment/ViewModels/FavouritePageVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

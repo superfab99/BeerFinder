@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ListingPage: View {
-    @StateObject var listingVM = ListingPageVM()
+    @StateObject private var listingVM : ListingPageVM
     @StateObject var products = FavouriteProducts()
     
+    init(apiService: BaseAPIService)
+    {
+        _listingVM = StateObject(wrappedValue: ListingPageVM(apiService: apiService))
+    }
     var body: some View {
         NavigationView{
             ZStack{
@@ -36,7 +40,10 @@ struct ListingPage: View {
 }
 
 struct ListingPage_Previews: PreviewProvider {
+    static let apiService = MockApiService()
+    
     static var previews: some View {
-        ListingPage()
+       ListingPage(apiService: apiService)
+            .environmentObject(FavouriteProducts())
     }
 }

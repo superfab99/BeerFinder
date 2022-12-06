@@ -15,7 +15,7 @@ struct ProductCell: View {
     var body: some View {
         VStack(alignment: .leading){
             HStack{
-                ResuableImageView(url: product.imageURL, height: 100, width: 100)
+                ReuseableImageView(url: product.imageURL, height: 100, width: 100)
 
                 VStack(alignment: .leading, spacing: 5){
                     Text(product.title)
@@ -33,7 +33,7 @@ struct ProductCell: View {
                         .onTapGesture {
                             favouritePageVM.addRemoveFavourite(item: product, storedFavList: products)
                         }
-                    Image(systemName: product.isOrdered ? "cart.badge.minus": "cart.badge.plus")
+                    Image(systemName:"cart.badge.plus")
                         .font(.system(size: Fonts.largeTitle))
                     
                 }

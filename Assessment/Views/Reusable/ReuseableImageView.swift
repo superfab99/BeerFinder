@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ResuableImageView: View {
+struct ReuseableImageView: View {
     var url : String
     var height : CGFloat
     var width : CGFloat
@@ -26,6 +26,6 @@ struct ResuableImageView: View {
 
 struct ResuableImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ResuableImageView(url: "",height: 200,width: 200)
+        ReuseableImageView(url: "",height: 200,width: 200)
     }
 }

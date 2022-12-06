@@ -16,7 +16,7 @@ struct DetailPage: View {
     var body: some View {
         ScrollView{
             VStack(){
-                ResuableImageView(url: product.imageURL, height: 200, width: 200)
+                ReuseableImageView(url: product.imageURL, height: 200, width: 200)
                 HStack(){
                     Text(product.title)
                         .font(Font.custom(Fonts.name,size: Fonts.largeTitle))
@@ -65,8 +65,9 @@ struct DetailPage: View {
 }
 
 struct DetailPage_Previews: PreviewProvider {
+    static let mockService = MockApiService()
     static var previews: some View {
-        //DetailPage()
-        Text("Hi")
+        DetailPage(product: mockService.getProduct())
+            .environmentObject(FavouriteProducts())
     }
 }

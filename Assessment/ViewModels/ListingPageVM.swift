@@ -6,24 +6,25 @@
 //
 
 import Foundation
+
 class ListingPageVM: ObservableObject {
     @Published var products : [Product] = []
     @Published var isLoading = true
-    private var baseUrl = "https://run.mocky.io/v3/2f06b453-8375-43cf-861a-06e95a951328";
+    
+    let apiService: BaseAPIService
+    
+    init(apiService: BaseAPIService) {
+        self.apiService = apiService
+    }
     
     func fetchProducts() async {
-        guard let url = URL(string: baseUrl) else { return }
-      
-        do {
-            let (result,urlResponse) = try await URLSession.shared.data(for: URLRequest(url: url))
-            let data = try JSONDecoder().decode(Products.self, from: result)
+        let data = await apiService.fetchData()
+        if let products = data?.products
+        {
             DispatchQueue.main.async {
-                self.products = data.products
+                self.products = products
                 self.isLoading = false
             }
-        } catch{
-            print(error)
         }
-        
     }
 }

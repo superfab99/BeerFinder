@@ -21,14 +21,10 @@ class FavouritePageVM : ObservableObject {
     }
     
     func checkIfFavourite(item: Product,storedFavList: FavouriteProducts) -> String{
-        let result = storedFavList.products.firstIndex { p in
+        let result = storedFavList.products.first { p in
             return p.id == item.id
         }
         
-        if let result = result {
-            return "heart.fill"
-        }else{
-            return "heart"
-        }
+        return result != nil ? "heart.fill" : "heart"
     }
 }
